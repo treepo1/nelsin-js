@@ -86,7 +86,7 @@ module.exports = [
         "author": "Walter White"
     },
     {
-        "quote": "You all know exactly who I am. Say my name.",
+        "quote": "Todos vocês sabem exatamente quem eu sou. Diga o meu nome.",
         "author": "Walter White"
     },
     {
