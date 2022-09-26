@@ -1,4 +1,5 @@
 const films = require('../films.json');
+const getRandomAlanImg = require('./getRandomAlanImg');
 const getRandomQuoteBB = require('./getRandomQuoteBB.js');
 
 
@@ -19,6 +20,10 @@ const handleCommands = async (interaction) => {
     else if (commandName === 'bbq') {
         const quoteWithAutor = await getRandomQuoteBB();
         await interaction.reply(`${quoteWithAutor.quote } - ${ quoteWithAutor.author }`);
+    }
+    else if (commandName === 'gama') {
+        const alanImgPath = getRandomAlanImg();
+        await interaction.reply({files: ['./database/alan-imgs/' + alanImgPath]});
     }
 };
 

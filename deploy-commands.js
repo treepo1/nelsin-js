@@ -7,6 +7,7 @@ const commands = [
     new SlashCommandBuilder().setName('calcula').setDescription('Calcula o valor de uma expressão matemática'),
     new SlashCommandBuilder().setName('recomendacao').setDescription('Recomenda um filme ou série SUSPEITO!'),
     new SlashCommandBuilder().setName('bbq').setDescription('Random Breaking Bad Quote'),
+    new SlashCommandBuilder().setName('gama').setDescription('Imagem aleatória de Alan Gama'),
 ].map(command => command.toJSON());
 
 const rest = new REST({ version: '10' }).setToken(token);
